@@ -10,7 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <div class="top">
@@ -19,7 +22,7 @@
     <header class="header">
         <nav class='nav'>
             <div class="nav__logo">
-                <img src="./assets/logo.png" alt="">
+                <img id="logo" src="./assets/logo.png" alt="">
             </div>
             <ul class="nav__links">
                 <li class="nav__item">
@@ -58,8 +61,8 @@
             </ul>
         </nav>
         <div class="hero">
-            <img src="./assets/hero-imag.jpg" alt="">
-            <div class="hero__content">
+            <img  data-aos="zoom-in" data-aos-duration="1500" src="./assets/hero-imag.jpg" alt="">
+            <div data-aos="fade-right" data-aos-duration="3000" class="hero__content">
                 <h2 class="heading heading--hero heading--white">Круті хусточки</h2>
                 <p class="paragraph paragraph--hero paragraph--white">Афігєнні хусточки для усіх бажаючих призвести враження</p>
                 <a href="#" class="btn btn--bg">Перейти в каталог</a>
@@ -68,7 +71,7 @@
     </header>
 
     <section class="intro">
-        <div class="intro__img">
+        <div data-aos="fade-up" class="intro__img">
             <img src="./assets/intro-img.jpg" alt="">
         </div>
         <div class="intro__text">
@@ -79,22 +82,22 @@
     </section>
     <section class="preview">
         <div class="preview__img">
-            <img src="./assets/image-5.jpg" alt="">
+            <img data-aos="fade-right" src="./assets/image-5.jpg" alt="">
             <h2 class="heading heading--thumb heading--white">Хусточки</h2>
         </div>
         <div class="preview__img">
-            <img src="./assets/image-6.jpg" alt="">
+            <img data-aos="fade-left" src="./assets/image-6.jpg" alt="">
         </div>
     </section>
     
     <section class="thumbnails">
-        <div class="thumbnails__col div1">
+        <div data-aos="fade-up" data-aos-duration="1500" class="thumbnails__col div1">
             <img src="./assets/col-1.jpg" alt="">
         </div>
-        <div class="thumbnails__col div2">
+        <div data-aos="fade-up" data-aos-duration="1500" class="thumbnails__col div2">
             <img src="./assets/col-2.jpg" alt="">
         </div>
-        <div class="thumbnails__col div3">
+        <div data-aos="fade-up" data-aos-duration="1500" class="thumbnails__col div3">
             <img src="./assets/col-3.jpg" alt="">
         </div>
         </div>
@@ -103,22 +106,22 @@
             <p class="paragraph paragraph--thumb">Кожен наш виріб є унікальним так як проходить не звичний етап вироблення, кожна картина є не повторною, Кожен принт це унікальна картина зі своєю історією і задумкою,</p>
             <a href="#" class="btn btn--border">Перейти в каталог</a>
         </div>
-        <div class="thumbnails__col div5">
+        <div data-aos="fade-up" data-aos-duration="1500" class="thumbnails__col div5">
             <img src="./assets/col-4.jpg" alt="">
         </div>
-        <div class="thumbnails__col div6">            
+        <div data-aos="fade-up" data-aos-duration="1500" class="thumbnails__col div6">            
             <img src="./assets/col-5.jpg" alt="">
         </div>
-        <div class="thumbnails__col div7">
+        <div data-aos="fade-up" data-aos-duration="1500" class="thumbnails__col div7">
             <img src="./assets/col-6.jpg" alt="">
         </div>
     </section>
 
     <section class="cta">
-        <div class='cta__col'>
+        <div data-aos="zoom-in" class='cta__col'>
             <div class="cta__social">
                 <img src="./assets/icons/insta.svg" alt="">
-                <img src="./assets/icons/twitter.svg" alt="">
+                <img src="./assets/icons/twiter.svg" alt="">
                 <img src="./assets/icons/facebook.svg" alt="">
             </div>
             <div class="cta__text">
@@ -131,9 +134,6 @@
                     <a href="#" class="btn btn--border">Перейти в каталог</a>
                 </div>
             </div>
-        </div>
-        <div class="cta__col cta__col--img">
-            <img src="./assets/bg-cta.png" alt="">
         </div>
     </section>
 
@@ -163,8 +163,51 @@
         <div class="footer__form">
             <p class="paragraph paragraph--hero">Підписатись</p>
             <p class="paragraph paragraph--hero">Підпишиь для отримання новин на нові товари та знижки</p>
-
+            <div class="footer__form-group">
+                <input type="text" placeholder="artmuse@gmail.com" class="footer__input">
+                <img src="./assets/icons/arrow.svg" alt="">
+            </div>
+        </div>
+        <div class="footer__info">
+            <div class="footer__info-wrap">
+                <p>адреса</p>
+                <h2>вул. Кульпаркіська 87</h2>
+            </div>
+            <div class="footer__info-wrap">
+                <p>Контакти</p>
+                <h2>+380 96 782 53 72</h2>
+            </div>
+            <div class="footer__social">
+                <img src="./assets/icons/insta.svg" alt="">
+                <img src="./assets/icons/twiter.svg" alt="">
+                <img src="./assets/icons/facebook.svg" alt="">
+            </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init();
+       
+        window.onscroll = function() {changeNavOnScroll()}
+        function changeNavOnScroll() {
+            if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.querySelector('.nav').style.padding = "10px 20px";
+                document.querySelector('.nav').style.backgroundColor = '#000'
+                document.querySelector('.nav').style.top = '0'
+                document.querySelector('.nav__logo').style.width = '180px';
+                document.querySelector('.nav__logo').style.height = '95px';
+            } else {
+                document.querySelector('.nav').style.padding = "20px 60px";
+                document.querySelector('.nav').style.backgroundColor = 'transparent'
+                document.querySelector('.nav').style.top = '56px'
+                document.querySelector('.nav__logo').style.width = '210px';
+                document.querySelector('.nav__logo').style.height = '120px';
+
+            }
+        }
+    </script>
+    
 </body>
 </html>
