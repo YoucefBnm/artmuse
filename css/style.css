@@ -51,19 +51,29 @@ body {
     color: #FFFFFF; }
 
 .btn {
-  padding: 20px 40px;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 23px; }
+  line-height: 23px;
+  transition: all .3s ease; }
   .btn--bg {
     background: linear-gradient(262.99deg, #DE1D23 -16.18%, #6F2522 188.69%);
-    border: 2px solid #DE1D23;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    padding: 23px 40px;
+    border: 2px solid transparent; }
+    .btn--bg:hover {
+      background: none;
+      color: #000000;
+      border: 2px solid #DE1D23; }
   .btn--border {
+    padding: 20px 40px;
     border: 2px solid #DE1D23;
     color: #000000; }
+    .btn--border:hover {
+      color: #FFFFFF;
+      background: #000;
+      border: 2px solid transparent; }
 
 .nav-link {
   font-family: 'Inter';
@@ -74,7 +84,7 @@ body {
   color: #FFFFFF;
   transform: color .2s ease; }
   .nav-link:hover {
-    color: rgba(255, 255, 255, 0.8); }
+    color: rgba(222, 29, 35, 0.8); }
 
 a {
   text-decoration: none; }
@@ -220,8 +230,8 @@ section, footer {
   position: relative;
   height: 100%;
   width: 100%;
-  background-image: image("../../assets/bg-cta.png");
   background: url(../../assets/bg-cta.png);
+  background-image: image("../../assets/bg-cta.png");
   background-size: 100% 100%;
   background-repeat: no-repeat; }
   .cta__col {

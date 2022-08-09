@@ -66,20 +66,33 @@ body{
 }
 
 .btn {
-    padding: 20px 40px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
+    transition: all .3s ease;
     &--bg {
         background: linear-gradient(262.99deg, #DE1D23 -16.18%, #6F2522 188.69%);
-        border: 2px solid #DE1D23;
         color: #FFFFFF;
+        padding: 23px 40px;
+        border: 2px solid transparent;
+
+        &:hover {
+            background: none;
+            color: #000000;
+            border: 2px solid #DE1D23;
+        }
     }
     &--border {
+        padding: 20px 40px;
         border: 2px solid #DE1D23;
         color: #000000;
+        &:hover {
+            color: #FFFFFF;
+            background: #000;
+            border: 2px solid transparent;
+        }
     }
 }
 
@@ -92,7 +105,7 @@ body{
     color: #FFFFFF;
     transform: color .2s ease;
     &:hover {
-        color: rgba(#FFFFFF, .8);
+        color: rgba(#DE1D23, .8);
     }
 }
 a {
