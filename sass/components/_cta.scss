@@ -1,0 +1,44 @@
+.cta {
+    position: relative;
+    &__col {
+        
+        &--img {
+            position: absolute;
+            right: 60px;
+            top: 60px;
+            width: 80%;
+            height: 300px;
+            img {
+                width: 100%;
+                height: 900px;
+            }
+        }
+    }
+    &__social {
+
+        img {
+
+        }
+    }
+
+    &__text {
+        position: absolute;
+        left: 60px;
+        top: 60px;
+        width: 53%;
+        z-index: 5;
+        .heading {
+
+        }
+        .paragraph {
+
+        }
+        .btns {
+
+        }
+    }
+    .btn--bg {
+        margin-right: 40px;
+
+    }
+}

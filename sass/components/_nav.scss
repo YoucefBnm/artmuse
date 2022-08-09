@@ -1,0 +1,36 @@
+.nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 121px;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    &__logo {
+        width: 209px;
+        height: 121px;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
+    &__links,
+    &__utils {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__links {
+        gap: 15px
+
+    }
+    &__utils {
+        gap: 10px
+    }
+}

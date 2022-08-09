@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Documents/_PROJECTS/SASS"
+		},
+		{
+			"path": "../../Documents/_PROJECTS/SASS-Tuto"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "artmuse"
+	}
+}

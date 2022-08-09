@@ -1,0 +1,226 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.heading {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 25px; }
+  .heading--hero {
+    line-height: 91.52px;
+    font-size: 80px; }
+  .heading--title {
+    font-size: 36px;
+    line-height: 41px; }
+  .heading--thumb {
+    font-size: 70px;
+    line-height: 80px; }
+  .heading--dark {
+    color: #000000; }
+  .heading--white {
+    color: #FFFFFF; }
+
+.paragraph {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 40px; }
+  .paragraph--hero {
+    line-height: 23px; }
+  .paragraph--text {
+    line-height: 150%; }
+  .paragraph--thumb {
+    font-size: 18px; }
+  .paragraph--dark {
+    color: #000000; }
+  .paragraph--white {
+    color: #FFFFFF; }
+
+.btn {
+  padding: 20px 40px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px; }
+  .btn--bg {
+    background: linear-gradient(262.99deg, #DE1D23 -16.18%, #6F2522 188.69%);
+    border: 2px solid #DE1D23;
+    color: #FFFFFF; }
+  .btn--border {
+    border: 2px solid #DE1D23;
+    color: #000000; }
+
+.nav-link {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+section, footer {
+  padding: 60px; }
+
+.top {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; }
+  .top p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF; }
+
+.nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 121px;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px; }
+  .nav__logo {
+    width: 209px;
+    height: 121px; }
+    .nav__logo img {
+      width: 100%;
+      height: 100%; }
+  .nav__links, .nav__utils {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .nav__links {
+    gap: 15px; }
+  .nav__utils {
+    gap: 10px; }
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh; }
+
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  .hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .hero__content {
+    width: 524px;
+    position: absolute;
+    bottom: 100px;
+    left: 60px;
+    z-index: 5; }
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 140px; }
+  .intro__img {
+    width: 860px;
+    height: 709px; }
+    .intro__img img {
+      width: 100%;
+      height: 100%; }
+  .intro__text {
+    width: 604px;
+    text-align: center; }
+
+.preview {
+  display: flex;
+  align-items: flex-start; }
+  .preview__img {
+    width: 860px;
+    height: 860px;
+    position: relative; }
+    .preview__img img {
+      width: 100%;
+      height: 100%; }
+    .preview__img .heading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 5; }
+
+.thumbnails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 300px); }
+  .thumbnails__col img {
+    width: 100%;
+    height: 100%; }
+  .thumbnails__text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; }
+  .thumbnails .div1 {
+    grid-area: 1 / 1 / 2 / 2; }
+  .thumbnails .div2 {
+    grid-area: 1 / 2 / 2 / 4; }
+  .thumbnails .div3 {
+    grid-area: 1 / 4 / 3 / 5; }
+  .thumbnails .div4 {
+    grid-area: 2 / 2 / 3 / 4; }
+  .thumbnails .div5 {
+    grid-area: 2 / 1 / 4 / 2; }
+  .thumbnails .div6 {
+    grid-area: 3 / 2 / 4 / 3; }
+  .thumbnails .div7 {
+    grid-area: 3 / 3 / 4 / 5; }
+
+.cta {
+  position: relative; }
+  .cta__col--img {
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    width: 80%;
+    height: 300px; }
+    .cta__col--img img {
+      width: 100%;
+      height: 900px; }
+  .cta__text {
+    position: absolute;
+    left: 60px;
+    top: 60px;
+    width: 53%;
+    z-index: 5; }
+  .cta .btn--bg {
+    margin-right: 40px; }
