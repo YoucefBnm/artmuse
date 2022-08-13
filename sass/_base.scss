@@ -2,6 +2,7 @@ $color-primary: #1B4F4F;
 $color-secondary: #AB6900;
 $color-blue: #2F80ED;
 $color-green-light: #7CB3A4;
+$color-green-light-nav: #66A191;
 $default-padding: 2rem 35rem;
 $color-gold: #CC9933;
 *,
@@ -36,17 +37,16 @@ section,footer {
     text-align: center;
     font-weight: 600;
     line-height: 20px;
+    margin-bottom: 3rem;
 
     &--main {
         font-size: 3rem;
         text-transform: uppercase;
-        margin-bottom: 3rem;
         color: $color-primary;
     }
     &--sub {
         font-size: 2.4rem;
         color: $color-secondary;
-        margin-bottom: 4rem;
     }
 }
 .paragraph {
@@ -66,6 +66,14 @@ section,footer {
     color: $color-green-light;
 }
 .container {
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
+}
+.hero {
+    width: 100%;
+    height: 20rem;
+    img {
+        width: 100%;
+        height: 100%;
+    }
 }

@@ -1,0 +1,48 @@
+.topNav {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+    background-color: $color-primary;
+    background-image: url('../../assets/topnav-bg.svg');
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: .5rem;
+        span {
+            img {
+                width: 4rem;
+            }
+        }
+    }
+    &__link-text {
+        font-style: italic;
+        font-size: 1.2rem;
+        color: $color-green-light-nav;
+        line-height: 20px;
+    }
+    &__utils {
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__utils &__item &__link span img {
+        width: 2rem;
+    }
+    #login {
+        color: $color-green-light-nav;
+    }
+    #register {
+        color: #fff;
+    }
+}
