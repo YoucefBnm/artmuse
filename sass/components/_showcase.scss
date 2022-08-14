@@ -1,15 +1,31 @@
 .showcase {
-
-    &__heading {
+    background-image: url('../../assets/showcase-bg.jpg');
+    background-size: 100% 100%;
+    &__container {
+        text-align: center;
+    }
+    &__header {
 
         h2 {
+            line-height: 20px;
+            
+            &:first-child {
+                font-size: 3.2rem;
+                color: #fff;
+                margin-bottom: 2rem;
 
+            }
+            &:last-child {
+                font-size: 2.4rem;
+                color: #FFD100;
+                margin-bottom: 4.5rem;
+            }
         }
     }
     &__frame {
-
+        
         iframe {
-            
+
         }
     }
 }
