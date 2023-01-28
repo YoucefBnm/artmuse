@@ -1,0 +1,39 @@
+main {
+    padding: 0 var(--x-padding-lg);
+    padding-bottom: 50px;
+}
+main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .col-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+
+}
+main .heading {
+    color: var(--color-secondary);
+    margin-bottom: 30px;
+}
+
+main .col-main p {
+    font-size: var(--font-size-20);
+    color: var(--color-secondary);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+.card-image {
+    padding: 10px 75px ;
+    background-color: var(--color-primary);
+    font-size: var(--font-size-25);
+}
