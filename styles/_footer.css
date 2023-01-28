@@ -2,19 +2,21 @@ footer {
     background-image: url('../assets/MiscelaStudio_Footer.jpg');
     background-size: 100% 100%;    
     padding: var(--y-padding-lg) var(--x-padding-lg);
-    padding-top: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     color: var(--color-white);
 }
-
+footer .col {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 .footer-list {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-basis: 80%;
     justify-content: space-between;
 }
 .font-list h4 {
@@ -31,4 +33,19 @@ footer .social-links svg {
 .footer-item {
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 390px) {
+    footer {
+        background-repeat: repeat-y;
+        padding: 100px var(--padding-sm);
+        padding-top: 200px;
+        font-size: 11px;
+    }
+    footer .col {
+        flex-wrap: wrap;
+    }
+    .footer-list {
+        flex-wrap: wrap;
+    }
 }

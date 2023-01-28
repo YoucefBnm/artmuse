@@ -15,7 +15,14 @@
   /*  */
   --x-padding-lg: 260px;
   --y-padding-lg: 50px;
+  --padding-sm: 40px;
   /*  */
+
+  /*  */
+  --breakpoint-sm: 390px;
+
+
+
 
   /* Font/text values */
   --font-family-open-sans: 'Open Sans', sans-serif;;
@@ -54,7 +61,6 @@
 
 html {
   scroll-behavior: smooth;
-
 }
 body {
   letter-spacing: 0;
@@ -81,95 +87,15 @@ a {
   color: inherit
 }
   /* Character Styles */
-  .cta-mobile {
-    font-family: var(--font-family-oxanium);
-    font-style: var(--font-style-normal);
-    font-weight: var(--font-weight-800);
-    font-size: var(--font-size-12);
-    line-height: var(--line-spacing-17);
-    letter-spacing: var(--character-spacing-0);
-    color: var(--color-000000);
-    text-transform: var(--text-transform-uppercase);
-  }
-  .text-mobile {
-  font-family: var(--font-family-open-sans);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-600);
-  font-size: var(--font-size-12);
-  line-height: var(--line-spacing-17);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-000000);
-  }
-  .h2-mobile {
-  font-family: var(--font-family-oxanium);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-800);
-  font-size: var(--font-size-24);
-  line-height: var(--line-spacing-22);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-000000);
-  }
-  .h1-mobile {
-  font-family: var(--font-family-oxanium);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-800);
-  font-size: var(--font-size-30);
-  line-height: var(--line-spacing-37);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-000000);
-  }
-  .info-desktop {
-  font-family: var(--font-family-open-sans);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-normal);
-  font-size: var(--font-size-12);
-  line-height: var(--line-spacing-17);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-000000);
-  }
-  .footer-desktop {
-  font-family: var(--font-family-open-sans);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-normal);
-  font-size: var(--font-size-15);
-  line-height: var(--line-spacing-20);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-000000);
-  }
-  .cta-desktop {
-  font-family: var(--font-family-oxanium);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-800);
-  font-size: var(--font-size-25);
-  line-height: var(--line-spacing-30);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-000000);
-  text-transform: var(--text-transform-uppercase);
-  }
-  .text-desktop {
-  font-family: var(--font-family-open-sans);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-600);
-  font-size: var(--font-size-20);
-  line-height: var(--line-spacing-27);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-000000);
-  }
-  .h2-desktop {
-  font-family: var(--font-family-oxanium);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-800);
-  font-size: var(--font-size-50);
-  line-height: var(--line-spacing-50);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-000000);
-  }
-  .h1-desktop {
-  font-family: var(--font-family-oxanium);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-800);
-  font-size: var(--font-size-75);
-  line-height: var(--line-spacing-75);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-000000);
-  }
+  
+  @media only screen and (max-width: 390px) {
+    header,
+    main
+    {
+        padding: var(--padding-sm);
+    }
+
+    body {
+
+    }
+}
