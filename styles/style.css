@@ -16,14 +16,6 @@
   --x-padding-lg: 260px;
   --y-padding-lg: 50px;
   --padding-sm: 40px;
-  /*  */
-
-  /*  */
-  --breakpoint-sm: 390px;
-
-
-
-
   /* Font/text values */
   --font-family-open-sans: 'Open Sans', sans-serif;;
   --font-family-oxanium: 'Oxanium', cursive;;
@@ -39,16 +31,6 @@
   --font-size-30: 30px;
   --font-size-50: 50px;
   --font-size-75: 75px;
-  --character-spacing-0: 0px;
-  --line-spacing-17: 17px;
-  --line-spacing-20: 20px;
-  --line-spacing-22: 22px;
-  --line-spacing-27: 27px;
-  --line-spacing-30: 30px;
-  --line-spacing-37: 37px;
-  --line-spacing-50: 50px;
-  --line-spacing-75: 75px;
-  --text-transform-uppercase: uppercase;
 }
 
 *,
@@ -86,7 +68,6 @@ a {
   text-decoration: none;
   color: inherit
 }
-  /* Character Styles */
   
   @media only screen and (max-width: 390px) {
     header,

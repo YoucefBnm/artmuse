@@ -7,6 +7,8 @@ footer {
     align-items: center;
     gap: 20px;
     color: var(--color-white);
+    padding-top: 200px;
+
 }
 footer .col {
     display: flex;
@@ -18,6 +20,7 @@ footer .col {
     align-items: center;
     justify-content: center;
     justify-content: space-between;
+    gap: 20px;
 }
 .font-list h4 {
     font-weight: 700;
@@ -39,7 +42,6 @@ footer .social-links svg {
     footer {
         background-repeat: repeat-y;
         padding: 100px var(--padding-sm);
-        padding-top: 200px;
         font-size: 11px;
     }
     footer .col {
