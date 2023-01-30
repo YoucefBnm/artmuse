@@ -1,38 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Oxanium:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-@import './_header.css';
-@import './_main.css';
-@import './_footer.css';
-
 :root {
-  /* Colors: */
-  --color-grey: #707070;
-  --color-dark: #000000;
-  --color-white: #FFFFFF;
-  --color-primary: #E30613;
-  --color-secondary: #990066;
-  
-  /*  */
-  --x-padding-lg: 260px;
-  --y-padding-lg: 50px;
-  --padding-sm: 40px;
-  /* Font/text values */
-  --font-family-open-sans: 'Open Sans', sans-serif;;
-  --font-family-oxanium: 'Oxanium', cursive;;
-  --font-style-normal: normal;
-  --font-weight-600: 600px;
-  --font-weight-800: 800px;
-  --font-weight-normal: normal;
-  --font-size-12: 12px;
-  --font-size-15: 15px;
-  --font-size-20: 20px;
-  --font-size-24: 24px;
-  --font-size-25: 25px;
-  --font-size-30: 30px;
-  --font-size-50: 50px;
-  --font-size-75: 75px;
+  --color-primary: rgb(51,66,137);
 }
-
 *,
 *::before,
 *::after {
@@ -47,36 +15,54 @@ html {
 body {
   letter-spacing: 0;
   font-style: normal;
-  font-family: var(--font-family-open-sans);
+  font-family: sans-serif;
   line-height: 1.35;
-  font-size: var(--font-size-15);
+  font-size: 15px;
+  background-color: #FFFFFF;
+  margin: 80px 120px;
 }
-.logo {
-  background-color: var(--color-white);
-}
-.heading {
-  font-family: var(--font-family-oxanium);
-  text-transform: uppercase;
-  font-size: var(--font-size-75);
-  line-height: 1;
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 100px;
   
 }
-li {
-  list-style: none;
+.info-keys {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
-a {
+.info-keys h3 {
+  color: var(--color-primary);
+}
+h2.value {
+  font-size: 1em;
+  margin-bottom: 30px;
+}
+
+.address-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.address-icon {
+  position: relative;
+}
+.address-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-primary);
+}
+.address-info {
   text-decoration: none;
-  color: inherit
+  font-size: 17px;
 }
-  
-  @media only screen and (max-width: 390px) {
-    header,
-    main
-    {
-        padding: var(--padding-sm);
-    }
 
-    body {
-
-    }
+footer {
+  background-image: url('../assets/bg.jpg');
+  min-height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
 }
