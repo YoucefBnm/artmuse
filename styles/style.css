@@ -65,4 +65,23 @@ footer {
   min-height: 300px;
   width: 100%;
   background-repeat: no-repeat;
+  padding: 20px 60px;
+  padding-right: 0;
+}
+footer h1 {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+footer ul li {
+  font-size: 20px;
+  color: var(--color-primary);
+  list-style: none;
+  position: relative;
+}
+footer ul li::before {
+  content: "\2022";
+  color: rgb(241, 199, 74);
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
 }
