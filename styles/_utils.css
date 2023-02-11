@@ -1,0 +1,17 @@
+.f--4 {
+    font-weight: 400;
+}
+.f--5 {
+    font-weight: 500;
+}
+.--6 {
+    font-weight: 600;
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+}
+.color-light {
+    color: #FFFFFF;
+}

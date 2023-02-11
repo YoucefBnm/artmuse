@@ -1,0 +1,22 @@
+.heading-lg {
+    /* 64px */
+    font-size: 4rem;
+    line-height: 109%;
+}
+.heading-md {
+    line-height: 117%;
+    /* 50px */
+    font-size: 3.125rem;
+}
+.heading-sm {
+    line-height: 117%;
+    /* 16px */
+    font-size: 1.125rem;
+    letter-spacing: 0.255em;
+}
+
+.text-hero {
+    font-family: inherit;
+    font-size: 1.875rem;
+    
+}

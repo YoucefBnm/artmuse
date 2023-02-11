@@ -1,2 +1,1 @@
-const smoothTrigger = document.querySelector('#scroll-trigger')
-
+import './style.css'
