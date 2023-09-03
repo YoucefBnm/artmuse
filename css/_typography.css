@@ -1,0 +1,9 @@
+.heading {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -5%;
+    line-height: 1.1;
+}
+
+.heading--lg {
+    font-size: 9vw;
+}
